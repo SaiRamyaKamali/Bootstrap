@@ -6,4 +6,4 @@ Added icons for navigation bar and social media links using fonts-awesome and bo
 Added contact us.html file and added buttons
 Added feedback forms
 Added Cards and tables
-
+Added images and media
