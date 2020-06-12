@@ -9,7 +9,7 @@
  
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/stysles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
 
@@ -313,72 +313,8 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-    <script>
-        $(document).ready(function(){
-            $("#mycarousel").carousel( { interval: 2000 } );
-            $("#carouselButton").click(function(){
-                if ($("#carouselButton").children("span").hasClass('fa-pause')) {
-                    $("#mycarousel").carousel('pause');
-                    $("#carouselButton").children("span").removeClass('fa-pause');
-                    $("#carouselButton").children("span").addClass('fa-play');
-                }
-                else if ($("#carouselButton").children("span").hasClass('fa-play')){
-                    $("#mycarousel").carousel('cycle');
-                    $("#carouselButton").children("span").removeClass('fa-play');
-                    $("#carouselButton").children("span").addClass('fa-pause');                    
-                }
-            });
-        });
-    </script>
-
-    <script>
-        $(document).ready(function()
-        {
-            $("#signincontent").click(function(){
-                $("#loginModal").modal('show');
-            });
-        });
-    </script>
+    <script src="js/scripts.js"></script>
       
-     
-
-    <script>
-        $(document).ready(function()
-        {
-            $("#ReserveTable").click(function(){
-                $("#ReserveTableModal").modal('show');
-            });
-        });
-    </script>
-
-    <script>
-        $(document).ready(function(){
-            $('[class="close"]').click(function(){
-                $("#loginModal").modal('hide');
-                $("#ReserveTableModal").modal('hide');
-            })
-        });
-    </script>
-
-    <script>
-        $(document).ready(function()
-        {
-            $("#cancel1").click(function(){
-                $("#loginModal").modal('hide');
-            });
-        });
-    </script>
-
-    <script>
-        $(document).ready(function()
-        {
-            $("#cancel2").click(function(){
-                $("#ReserveTableModal").modal('hide');
-            });
-        });
-
-    </script>
 
 </body>
 
